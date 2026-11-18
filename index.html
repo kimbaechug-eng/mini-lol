@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>협곡 미니 대전 5:5 - 웹게임</title>
-  <meta name="description" content="설치 없이 브라우저에서 바로 즐기는 5:5 미니 MOBA 액션 웹게임!">
+  <meta name="description" content="설치 없이 브라우저에서 바로 즐기는 5:5 미니 MOBA 액션 웹게임! 7종의 챔피언을 선택해 적 넥서스를 파괴하세요.">
 </head>
 <body style="margin:0;overflow:hidden;background:#070d08;" oncontextmenu="return false;">
 <script>
@@ -77,4 +77,3 @@ function updateGame(){
   if(tk%480===1){for(let ln=0;ln<3;ln++)for(let i=0;i<3;i++){E.push({x:240+i*18,y:MH-240-i*18,hp:230,mhp:230,r:11,tm:1,tp:3,ln,v:260,cd:0});E.push({x:MW-240-i*18,y:240+i*18,hp:230,mhp:230,r:11,tm:0,tp:3,ln,v:260,cd:0});}}
   if(sp>0){sp--;if(p.id===2&&tk%8===0)for(let en of E)if(en.tm!==1&&en.hp>0&&H(en.x-p.x,en.y-p.y)<105)en.hp-=18+ab*.25;}
   if(ww>0)ww--;
-  if(H(p.x-180,p.y-(MH-180))<220)p.hp=Math.min(p.mhp,p.hp+4);
